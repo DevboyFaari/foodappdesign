@@ -24,7 +24,7 @@ const Nody = () => {
           We've Got Taste.
         </h1>
         <h1 className="text-[24px] font-[poppins] w-[674px] mt-3 h-[72px] ">
-          Explore your Taste with speacial food in the special place. This text
+          Explore your Taste with special food in the special place. This text
           don’t have any meaning
         </h1>
         <div className="flex absolute">
@@ -101,8 +101,8 @@ const Nody = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M3.20753 10.4768L0.253104 15.699L311.491 192.677L317.429 182.207L3.20753 10.4768ZM321.384 184.356L315.396 194.914L352.309 216.052L358.694 204.636L321.384 184.356Z"
             fill="#2F363A"
           />
