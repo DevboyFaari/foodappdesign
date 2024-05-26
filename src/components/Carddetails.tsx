@@ -51,11 +51,13 @@ const Carddetails = () => {
             <p className="ml-2">214 reviews</p>
           </CardContent>
 
-          <CardFooter className="mt-[-50px] ml-[-150px] text-[#04B90B]">
-            {item.price}
-            <button className="w-[137px] relative h-[44px] py-[10px] px-[20px] bg-[#04B90B] mr-[10px] mt-4 text-white rounded-lg">
-              Order Now!
-            </button>
+          <CardFooter className="mt-[30px] mr-[-230px]">
+            <div className="flex items-center mt-[-50px] ml-[-250px] text-[#04B90B]">
+              <span>{item.price}</span>
+              <button className="ml-[50px] w-[137px] h-[44px] py-[10px] px-[20px] bg-[#04B90B] text-white rounded-lg">
+                Order Now!
+              </button>
+            </div>
           </CardFooter>
         </Card>
       ))}

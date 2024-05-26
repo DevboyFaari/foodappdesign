@@ -3,6 +3,9 @@ import Header from "@fooddesignapp/components/Header";
 import Nody from "@fooddesignapp/components/Nody";
 import Carddetails from "@fooddesignapp/components/Carddetails";
 import { Button } from "@fooddesignapp/components/ui/button";
+import Michelin from "@fooddesignapp/components/Michelin";
+import Deli from "@fooddesignapp/components/Deli";
+import Form from "@fooddesignapp/components/Form";
 
 export default function Home() {
   return (
@@ -11,6 +14,9 @@ export default function Home() {
       <Nody />
       <Details />
       <Carddetails />
+      <Michelin />
+      <Deli />
+      <Form />
     </main>
   );
 }

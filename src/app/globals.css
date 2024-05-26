@@ -3,9 +3,9 @@
   @tailwind utilities;
 
 
-  /* .image{
-    max-width: 10%;
-  } */
+body{
+  background-color: #FCFCFD;
+}
 
   .card img {
     width: 150px !important;
