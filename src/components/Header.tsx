@@ -6,13 +6,13 @@ export default function Home() {
         <a href="home" className="text-green-600">
           Home
         </a>
-        <a href="home" className="text-grey-600">
+        <a href="menu" className="text-grey-600">
           Menu
         </a>
-        <a href="home" className="text-grey-600 ">
+        <a href="blog" className="text-grey-600 ">
           Blog
         </a>
-        <a href="home" className="text-grey-600 ">
+        <a href="contact-us" className="text-grey-600 ">
           Contact Us
         </a>
         <button className="px-4 py-2 bg-green-500 text-white rounded hover:bg-gray-600">

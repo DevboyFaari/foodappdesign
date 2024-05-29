@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "@fooddesignapp/components/Header";
 
 const page = () => {
-  return <div>Menu!!!!</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 };
 
 export default page;
