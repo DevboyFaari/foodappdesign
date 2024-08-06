@@ -1,4 +1,4 @@
-import { Inter, Alice } from "next/font/google";
+import { Inter, Alice, Poppins } from "next/font/google";
 
 export const inter = Inter({
   subsets: ["latin"],
@@ -10,3 +10,5 @@ export const alice = Alice({
   display: "swap",
   weight: "400",
 });
+
+

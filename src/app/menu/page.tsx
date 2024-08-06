@@ -6,11 +6,12 @@ import {
   CardTitle,
 } from "@fooddesignapp/components/ui/card";
 import Header from "@fooddesignapp/components/Header";
-import { Alice } from "next/font/google";
+import { Alice, Poppins } from "next/font/google";
 import { TiStarFullOutline } from "react-icons/ti";
 import Footer from "@fooddesignapp/components/Footer";
+import { alice } from "../fonts";
 
-const alice = Alice({
+const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
 });
@@ -69,7 +70,7 @@ const Carddetails = () => {
               alt={`Food ${index + 1}`}
             />
             <div className="text-left mt-2">
-              <CardTitle className="ml-4 text-xl font-bold">
+              <CardTitle className={`ml-4 text-xl font-bold ${alice.className}`}>
                 {item.name}
               </CardTitle>
               <CardContent className="flex items-center text-[#04B90B] mt-[10px] ml-[-20px]">
@@ -80,14 +81,14 @@ const Carddetails = () => {
                 <TiStarFullOutline className="ml-[-5px]" />
                 <TiStarFullOutline className="ml-[-5px]" />
 
-                <p className="ml-2">{item.review} Reviews</p>
+                <p className={`ml-2 ${poppins.className}`}>{item.review} Reviews</p>
               </CardContent>
 
               <CardFooter className="flex items-center mt-2 ml-4 text-[#04B90B]">
-                <span className="text-xl font-bold whitespace-nowrap relative right-[20px]">
+                <span className={`text-xl font-bold whitespace-nowrap relative right-[20px] ${poppins.className}`}>
                   {item.price}
                 </span>
-                <button className="ml-4 w-[137px] h-[44px] py-[10px] px-[20px] bg-[#04B90B] text-white rounded-lg">
+                <button className={`ml-4 w-[137px] h-[44px] py-[10px] px-[20px] bg-[#04B90B] text-white rounded-lg ${poppins.className}`}>
                   Order Now!
                 </button>
               </CardFooter>
@@ -110,7 +111,7 @@ const Page = () => {
           Get <span className="text-[#04B90B]">special</span> Meals
         </h1>
         <div className="flex justify-center items-center relative top-[-140px]">
-          <span className="text-[#777E90] text-[20px] mt-[-20px] text-center">
+          <span className={`text-[#777E90] text-[20px] mt-[-20px] text-center ${poppins.className}`}>
             Best cooks and best delivery guys all at your service. Hot tasty
             <br />
             food will reach you in 60 minutes.
@@ -118,7 +119,7 @@ const Page = () => {
         </div>
       </div>
       <div className="flex justify-center mt-[60px]">
-        <div className="flex justify-between items-center w-[570px] h-[52px] rounded-[8px] bg-white p-2 shadow-lg">
+        <div className={`${poppins.className} flex justify-between items-center w-[570px] h-[52px] rounded-[8px] bg-white p-2 shadow-lg`}>
           <div className="flex items-center w-[184px] h-[48px] rounded-[8px] bg-[#43CB48] p-2">
             <img
               src="./food1.png"
@@ -152,7 +153,7 @@ const Page = () => {
               className="w-[33px] h-[33px] mr-2"
               alt="thai-food"
             />
-            <a href="thai-food" className="text-black">
+            <a href="thai-food" className="text-black whitespace-nowrap">
               Thai Food
             </a>
           </div>

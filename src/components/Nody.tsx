@@ -1,8 +1,15 @@
 import React from "react";
 
-import { Alice } from "next/font/google";
+import { Alice, Poppins } from "next/font/google";
 
 const alice = Alice({
+  subsets: ["latin"],
+  weight: "400",
+});
+
+
+
+const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
 });
@@ -23,12 +30,12 @@ const Nody = () => {
         >
           We've Got Taste.
         </h1>
-        <h1 className="text-[24px] font-[poppins] w-[674px] mt-3 h-[72px] ">
+        <h1 className={`text-[24px] text-[#353945] ${poppins.className} w-[674px] mt-3 h-[72px] `}>
           Explore your Taste with special food in the special place. This text
           don’t have any meaning
         </h1>
         <div className="flex absolute">
-          <button className="w-[137px] h-[44px] py-[10px] px-[20px] bg-[#04B90B] mt-4 text-white rounded-lg">
+          <button className="w-[137px] h-[44px] font-[poppins] py-[10px] px-[20px] bg-[#04B90B] mt-4 text-white rounded-lg">
             Order Now!
           </button>
           <h1 className="absolute left-[150px] bottom-[10px] font-medium whitespace-nowrap  text-[#04B90B] ">

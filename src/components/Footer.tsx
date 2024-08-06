@@ -1,8 +1,14 @@
 import React from "react";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const Footer = () => {
   return (
-    <div className="relative top-[160px] left-[-480px] flex justify-center">
+    <div className={`mt-[100px] ml-[-680px] flex justify-center items-center ${poppins.className}`}>
       <div className="text-center">
         <img src="./logo.png" alt="food-logo" className="mx-auto" />
         <p className="w-[336px] h-[82px]">
