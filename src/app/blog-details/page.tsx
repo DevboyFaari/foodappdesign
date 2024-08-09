@@ -140,12 +140,12 @@ const page = () => {
           or yogurt, or 1 1/2 ounces of natural cheese.
         </p>
         <Image
-          className="absolute top-[1170px] left-[800px]"
-          src="/topfood.png"
-          alt="a plate of leafy food"
-          width={458}
-          height={358}
-        />
+    className="relative top-8 md:absolute md:top-[1170px] left-0 md:left-[800px] mx-auto mt-4 md:mt-0"
+    src="/topfood.png"
+    alt="a plate of leafy food"
+    width={458}
+    height={358}
+  />
        <div className="mt-8">
   <h1 className="text-2xl font-bold">Fiber</h1>
   
@@ -197,88 +197,82 @@ const page = () => {
         </svg>
         <div className="flex">
 
-        <div className="flex ">
-          <Image
-            src="/steak.png"
-            alt="Picture of the author"
-            width={313}
-            height={243}
-          />
-          <div>
-            <span
-              className={`${poppins.className} text-[#777E90] font-[500] text-[12px]`}
-            >
-              Jun 20, 2024
-            </span>
-            <h1
-              className={`${poppins.className} ml-[15px] font-[1000] w-[306px] text-black-900`}
-            >
-              How To Cook Perfect Steak on the Stovetop in 3 Steps?
-            </h1>
-            <p
-              className={`${poppins.className} ml-[15px] mt-3 font-black w-[306px] text-[#777E90] text-[14px]`}
-            >
-              Cooking a very good steak on the stovetop goes like this: Buy the
-              best steak for pan-searing (boneless NY strip or rib-eye).
-            </p>
-            <div className="absolute flex gap-3">
-              <p
-                className={`${poppins.className} text-[#8D31E9] text-[12px] rounded-[4px] bg-[#F6EEFD]`}
-              >
-                Cooking
-              </p>
-              <p
-                className={`${poppins.className} text-[#26ACA0] text-[12px] rounded-[4px] bg-[#EDFCFB]  `}
-              >
-                Tips
-              </p>
+        <div className="flex flex-col md:flex-row md:space-x-4 p-4">
+  <Image
+    src="/steak.png"
+    alt="Picture of the author"
+    width={313}
+    height={243}
+    className="w-full md:w-[313px] h-auto"
+  />
+  <div className="mt-4 md:mt-0">
+    <span className={`${poppins.className} text-[#777E90] font-[500] text-[12px]`}>
+      Jun 20, 2024
+    </span>
+    <h1
+      className={`${poppins.className} mt-2 md:ml-[15px] font-[1000] text-[18px] md:text-[24px] text-black-900`}
+    >
+      How To Cook Perfect Steak on the Stovetop in 3 Steps?
+    </h1>
+    <p
+      className={`${poppins.className} mt-3 md:ml-[15px] font-black text-[#777E90] text-[14px]`}
+    >
+      Cooking a very good steak on the stovetop goes like this: Buy the best steak for pan-searing (boneless NY strip or rib-eye).
+    </p>
+    <div className="mt-4 md:absolute flex gap-3">
+      <p
+        className={`${poppins.className} text-[#8D31E9] text-[12px] rounded-[4px] bg-[#F6EEFD] p-1`}
+      >
+        Cooking
+      </p>
+      <p
+        className={`${poppins.className} text-[#26ACA0] text-[12px] rounded-[4px] bg-[#EDFCFB] p-1`}
+      >
+        Tips
+      </p>
+    </div>
+  </div>
+</div>
 
-              
-            </div>
-          </div>
-          
-        </div>
-        <div className="flex ">
-          <Image
-            src="/fish.png"
-            alt="Picture of the author"
-            width={213}
-            height={243}
-          />
-          <div>
-            <span
-              className={`${poppins.className} text-[#777E90] font-[500] text-[12px]`}
-            >
-              Jun 20, 2024
-            </span>
-            <h1
-              className={`${poppins.className} ml-[15px] font-[1000] w-[306px] text-black-900`}
-            >
-             Fried fish recipes that will leave you in awe
-            </h1>
-            <p
-              className={`${poppins.className} ml-[15px] mt-3 font-black w-[306px] text-[#777E90] text-[14px]`}
-            >
-              You can never go wrong  with fried sea food, check out this western delicacy that will
-              have your taste buds craving
-            </p>
-            <div className="absolute flex gap-3">
-              <p
-                className={`${poppins.className} text-[#8D31E9] text-[12px] rounded-[4px] bg-[#F6EEFD]`}
-              >
-                Cooking
-              </p>
-              <p
-                className={`${poppins.className} text-[#26ACA0] text-[12px] rounded-[4px] bg-[#EDFCFB]  `}
-              >
-                Tips
-              </p>
+<div className="flex flex-col md:flex-row p-4">
+  <Image
+    src="/fish.png"
+    alt="Picture of the author"
+    width={213}
+    height={243}
+    className="w-full md:w-auto h-auto"
+  />
+  <div className="mt-4 md:mt-0 md:ml-4">
+    <span
+      className={`${poppins.className} text-[#777E90] font-medium text-[12px]`}
+    >
+      Jun 20, 2024
+    </span>
+    <h1
+      className={`${poppins.className} mt-2 font-extrabold text-black-900 text-lg md:text-xl lg:text-2xl`}
+    >
+      Fried fish recipes that will leave you in awe
+    </h1>
+    <p
+      className={`${poppins.className} mt-3 font-bold text-[#777E90] text-sm md:text-base`}
+    >
+      You can never go wrong with fried seafood. Check out this western delicacy that will have your taste buds craving.
+    </p>
+    <div className="flex gap-3 mt-3">
+      <p
+        className={`${poppins.className} text-[#8D31E9] text-[12px] rounded-[4px] bg-[#F6EEFD] p-1`}
+      >
+        Cooking
+      </p>
+      <p
+        className={`${poppins.className} text-[#26ACA0] text-[12px] rounded-[4px] bg-[#EDFCFB] p-1`}
+      >
+        Tips
+      </p>
+    </div>
+  </div>
+</div>
 
-              
-            </div>
-          </div>
-          
-        </div>
 
 
         <div>

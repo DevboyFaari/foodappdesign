@@ -1,18 +1,26 @@
 import Footer from "@fooddesignapp/components/Footer";
 import Header from "@fooddesignapp/components/Header";
 import React from "react";
+import { alice, poppins } from "../fonts";
 
-const countryOptions = [
-  { value: "+1", label: "US (+1)" },
-  { value: "+44", label: "UK (+44)" },
-  { value: "+234", label: "NIG (+234)" },
-];
 
 const page = () => {
+    const countryOptions = [
+      { value: "+1", label: "US (+1)" },
+      { value: "+44", label: "UK (+44)" },
+      { value: "+234", label: "NIG (+234)" },
+    ];
   return (
     <div>
       <Header />
-     
+      <div className="relative left-[30px]">
+      <p className={`${alice.className} text-[48px]`}>Contact us</p>
+<p className={`${poppins.className} w-[400px] text-[24px]`}>
+  We love to hear from you anytime. You can reach us anytime via{" "}
+  <span className="text-[green] whitespace-nowrap">Mailhere@Food.com</span>
+</p>
+
+      </div>
       <div className="flex flex-col md:flex-row justify-center items-center h-screen">
   <>
     <div className="w-full md:w-1/2 p-4 md:p-6">
@@ -75,7 +83,7 @@ const page = () => {
       ></iframe>
     </div>
   </>
-</div>
+p</div>
 
   <Footer />
 

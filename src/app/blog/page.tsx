@@ -52,9 +52,10 @@ const Page = () => {
       >
         Recent Blog Post
       </p>
-
+        
       <div className="flex relative top-[150px]">
         <div>
+          <p>*click image below</p>
           <a href="/blog-details">
             <Image
               src="/greyfood.png"
