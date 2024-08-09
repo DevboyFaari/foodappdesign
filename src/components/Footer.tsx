@@ -8,47 +8,42 @@ const poppins = Poppins({
 
 const Footer = () => {
   return (
-    <div className={`mt-[100px] ml-[-680px] flex justify-center items-center ${poppins.className}`}>
-      <div className="text-center">
+    <div className={`mt-[50px] md:mt-[100px] flex flex-col md:flex-row justify-center items-center ${poppins.className}`}>
+      <div className="text-center mb-8 md:mb-0 md:mr-8">
         <img src="./logo.png" alt="food-logo" className="mx-auto" />
-        <p className="w-[336px] h-[82px]">
+        <p className="w-[90%] md:w-[336px] h-auto md:h-[82px] mx-auto mt-4">
           Explore your Taste with special food in the special place, that will
           make you happy. I try to write something without lorem ipsum.
         </p>
-        <div className="flex relative bottom-[160px] left-[500px]">
-          <div className="grid grid-rows-3  gap-2">
-            <h4 className="text-black-900 font-black">Support</h4>
-            <a href="#help " className="text-grey-500 hover:underline">
+      </div>
+      <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
+          <h4 className="text-black-900 font-black mb-2">Support</h4>
+          <div className="flex flex-col space-y-2">
+            <a href="#help" className="text-gray-500 hover:underline">
               Help Center
             </a>
-            <a href="#safety-info" className="text-grey-500 hover:underline">
+            <a href="#safety-info" className="text-gray-500 hover:underline">
               Safety Information
             </a>
-            <a href="#cancelation" className="text-grey-500 hover:underline">
+            <a href="#cancelation" className="text-gray-500 hover:underline">
               Cancellation Option
             </a>
-            <a href="#report" className="text-grey-500 hover:underline">
+            <a href="#report" className="text-gray-500 hover:underline">
               Report Complaint
             </a>
           </div>
-          <div className="flex flex-col justify-center relative left-[100px] bottom-[50px]">
-            <h4 className="text-black-900 font-black">Community</h4>
-            <a
-              href="#services"
-              className="text-grey-500 hover:underline mx-2 bottom-[-30px] relative"
-            >
+        </div>
+        <div className="flex flex-col items-center md:items-start">
+          <h4 className="text-black-900 font-black mb-2">Community</h4>
+          <div className="flex flex-col space-y-2">
+            <a href="#services" className="text-gray-500 hover:underline">
               Services
             </a>
-            <a
-              href="#blog"
-              className="text-grey-500 hover:underline mx-2 bottom-[-30px] relative"
-            >
+            <a href="#blog" className="text-gray-500 hover:underline">
               Blog
             </a>
-            <a
-              href="#support"
-              className="text-grey-300 hover:underline mx-2 bottom-[-30px] relative"
-            >
+            <a href="#support" className="text-gray-500 hover:underline">
               Support
             </a>
           </div>
